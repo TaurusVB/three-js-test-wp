@@ -31,15 +31,19 @@ orbit.update();
 const axesHelper = new THREE.AxesHelper(3);
 const gridHelper = new THREE.GridHelper(30);
 const dLightHelper = new THREE.DirectionalLightHelper(directionalLight, 5);
+const dLightShadowHelper = new THREE.CameraHelper(
+  directionalLight.shadow.camera
+);
 
 scene.add(axesHelper);
 scene.add(sphere);
 scene.add(box);
 scene.add(plane);
-scene.add(ambientLight);
 scene.add(gridHelper);
+scene.add(ambientLight);
 scene.add(directionalLight);
 scene.add(dLightHelper);
+scene.add(dLightShadowHelper);
 
 let step = 0;
 

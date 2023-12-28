@@ -7,7 +7,8 @@ const sphereMaterial = new THREE.MeshStandardMaterial({
   wireframe: false,
 });
 const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
-sphere.position.set(-10, 10, 10);
+sphere.position.set(-10, 10, 0);
+sphere.castShadow = true;
 
 const gui = new dat.GUI();
 

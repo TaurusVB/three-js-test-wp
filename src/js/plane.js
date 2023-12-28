@@ -8,4 +8,6 @@ const planeMaterial = new THREE.MeshStandardMaterial({
 const plane = new THREE.Mesh(planeGeometry, planeMaterial);
 plane.rotation.x = -0.5 * Math.PI;
 
+plane.receiveShadow = true;
+
 export default plane;
