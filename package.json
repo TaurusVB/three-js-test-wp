@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel ./src/index.html"
   },
   "author": "",
   "license": "ISC",
@@ -12,6 +13,7 @@
     "parcel": "^2.10.3"
   },
   "dependencies": {
+    "dat.gui": "^0.7.9",
     "three": "^0.160.0"
   }
 }
